@@ -1,0 +1,44 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../core-ajax/core-ajax.html">
+
+<!--
+Element that returns the public descript of a subreddit
+
+##### Example
+
+    <reddit-element subreddit="cute"></reddit-element>
+
+@element reddit-element
+@blurb Element that returns the public descript of a subreddit
+@status alpha
+@url github.io
+-->
+<polymer-element name="reddit-element" attributes="subreddit">
+
+  <template>
+    
+    <link href="reddit-element.css" rel="stylesheet" />
+
+    <core-ajax url="http://www.reddit.com//r/{{subreddit}}/about.json" auto response="{{resp}}"></core-ajax>
+
+    <div class="myreddit">{{resp.data.public_description}}</div>
+      
+  </template>
+
+  <script>
+
+    Polymer({
+      /**
+       * The `subreddit` attribute takes in the name of a subreddit.
+       * It defaults to the 'aww' subreddit if no value is passed
+       * 
+       * @attribute subreddit
+       * @type string
+       */
+      subreddit: "aww"
+
+    });
+
+  </script>
+
+</polymer-element>

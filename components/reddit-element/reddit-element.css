@@ -1,0 +1,12 @@
+﻿:host {
+  display: block;
+}
+
+.myreddit {
+
+    width: 300px;
+    height: 300px;
+    font-size: 16px;
+    font-family: Tahoma;
+
+}

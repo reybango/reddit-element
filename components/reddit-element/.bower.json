@@ -1,0 +1,18 @@
+{
+  "name": "reddit-element",
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.2.3",
+    "core-elements": "Polymer/core-elements#~0.2.3"
+  },
+  "homepage": "https://github.com/reybango/reddit-element",
+  "_release": "d808a174d6",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "d808a174d6e578ce51012c3fdd7717a13296b303"
+  },
+  "_source": "git://github.com/reybango/reddit-element.git",
+  "_target": "master",
+  "_originalSource": "reybango/reddit-element",
+  "_direct": true
+}
